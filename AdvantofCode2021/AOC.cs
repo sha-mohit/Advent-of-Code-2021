@@ -105,13 +105,13 @@ namespace AdvantofCode2021
                 //label1.Text = puzzel_9.FirstSolution(readings);
                 //label2.Text = puzzel_9.SecondSolution(readings);
 
-                Puzzel_10 puzzel_10 = new Puzzel_10();
-                label1.Text = puzzel_10.FirstSolution(readings);
-                label2.Text = puzzel_10.SecondSolution(readings);
+                //Puzzel_10 puzzel_10 = new Puzzel_10();
+                //label1.Text = puzzel_10.FirstSolution(readings);
+                //label2.Text = puzzel_10.SecondSolution(readings);
 
-                //Puzzel_11 puzzel_11 = new Puzzel_11();
-                //label1.Text = puzzel_11.FirstSolution(readings);
-                //label2.Text = puzzel_11.SecondSolution(readings);
+                Puzzel_11 puzzel_11 = new Puzzel_11();
+                label1.Text = puzzel_11.FirstSolution(readings);
+                label2.Text = puzzel_11.SecondSolution(readings);
 
                 //Puzzel_12 puzzel_12 = new Puzzel_12();
                 //label1.Text = puzzel_12.FirstSolution(readings);
