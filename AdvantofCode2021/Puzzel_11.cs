@@ -32,7 +32,9 @@ namespace AdvantofCode2021
                 }
             }
             totalFlashes = 0;
-            for (int i = 0; i < 100; i++)
+            int step = 1;
+            int firstAns = 0;
+            while (allFlashedStep == 0)
             {
                 for (int j = 0; j < RowCount; j++)
                 {
@@ -41,9 +43,25 @@ namespace AdvantofCode2021
                         Increment(j, k);
                     }
                 }
+                //puzzel 1
+                if (step ==100)
+                {
+                    firstAns = totalFlashes;
+                }
+                //puzzel 2
+                if (flashCord.Count == 100)
+                {
+                    if (allFlashedStep == 0)
+                    {
+                        allFlashedStep = step;
+                    }
+
+                }
+                step++;
                 flashCord.Clear();
+
             }
-           return totalFlashes.ToString();
+           return firstAns.ToString();
         }
         public void Increment(int i, int j)
         {
@@ -102,44 +120,10 @@ namespace AdvantofCode2021
                 Increment(i, locFor);
             }
         }
-        List<string> lowerePoints = new List<string>();
-        Dictionary<string, List<string>> finalBasin = new Dictionary<string, List<string>>();
-        List<string> totalbasin = new List<string>();
 
         public string SecondSolution(List<string> readings)
         {
-             int step = 1;
-            for (int i = 0; i < RowCount; i++)
-            {
-                matrices[i] = new int[ColCount];
-                string r = readings[i];
-
-                for (int j = 0; j < r.Count(); j++)
-                {
-                    matrices[i][j] = int.Parse(r[j].ToString());
-                }
-            }
-            while (allFlashedStep == 0)
-            {
-                for (int j = 0; j < RowCount; j++)
-                {
-                    for (int k = 0; k < ColCount; k++)
-                    {
-                        Increment(j, k);
-                    }
-                }
-                if (flashCord.Count == 100)
-                {
-                    if (allFlashedStep == 0)
-                    {
-                        allFlashedStep = step;
-                    }
-
-                }
-                step++;
-                flashCord.Clear();
-
-            }
+           
             return allFlashedStep.ToString();
         }
        
