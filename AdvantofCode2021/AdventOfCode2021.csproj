@@ -58,6 +58,7 @@
       <DependentUpon>AOC.cs</DependentUpon>
     </Compile>
     <Compile Include="Puzzel_10.cs" />
+    <Compile Include="Puzzel_12.cs" />
     <Compile Include="Puzzel_11.cs" />
     <Compile Include="Puzzel_9.cs" />
     <Compile Include="Puzzel_8.cs" />
